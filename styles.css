@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e8eaec;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.phone-container {
+  display: inline-flex;
+  gap: 5rem;
+}
+
+.the-frame {
+  padding: 20px;
+}
+
+.phone {
+  box-shadow: 0 10px 20px rgb(30 42 90 / 10%),
+    inset 4px 4px 6px rgb(0 0 0 / 10%),
+    inset -3px -3px 10px rgba(165, 175, 214, 0.8);
+  display: inline-block;
+  padding: 35px 10px 10px 10px;
+  border-radius: 36px;
+  background: rgb(17, 17, 17);
+  position: relative;
+}
+
+.phone:before {
+  content: "";
+  height: 8px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  background: #c5c5c7;
+  margin-left: -50px;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgb(0 0 0 / 5%);
+}
+
+.phone:after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  background: #cacbce;
+  margin-left: 60px;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 5px rgb(0 0 0 / 5%);
+}
+
+.phone_frame {
+  border-color: wheat;
+  box-shadow: inset 0 3px 10px rgb(0 0 0 / 20%);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #e1e6f5;
+  height: 664px;
+  width: 362px;
+  background-color: #fff;
+}
+
+.up-nav {
+  display: flex;
+}
+
+.up-nav .icons-container {
+  align-items: right;
+  justify-content: right;
+  margin-left: 25%;
+}
+
+.up-nav .icons {
+  max-height: 20px;
+  max-width: 20px;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.up-nav .brand-img {
+  height: 42px;
+  width: 125px;
+  align-items: left;
+  margin-left: 17px;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0%;
+  gap: 3px;
+}
+
+.img-container li {
+  position: relative;
+  margin: 5px;
+}
+
+.img-container img {
+  display: block;
+  height: 2.8rem;
+  width: 2.8rem;
+  padding: 0.2rem;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0 solid transparent;
+  background: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%) border-box;
+  background: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%) padding-box;
+}
+
+.img-container img:hover {
+  height: 2.85rem;
+  width: 2.85rem;
+}
+
+.img-container span {
+  font-size: 0.6rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.grid {
+  display: grid;
+  grid-column: auto;
+  position: relative;
+  margin-top: 1.2rem;
+}
+
+.grid .item {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px #ccc solid;
+  height: 25rem;
+  margin: 0px 7px 7px 7px;
+  box-shadow: 1px 1px 2px #ccc;
+  padding-bottom: 1rem;
+}
+
+.grid .item p {
+  font-size: 0.6rem;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.grid .item img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.grid .item img:hover {
+  height: 2.1rem;
+  width: 2.1rem;
+  border-radius: 50%;
+}
+
+.info {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.info .username {
+  width: auto;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  transform: translate(-0.2rem);
+  cursor: pointer;
+}
+
+.info .options {
+  max-width: 18px;
+  max-height: 9px;
+  cursor: pointer;
+}
+
+.info .user {
+  display: flex;
+  align-items: center;
+  margin-left: -6px;
+}
+
+.info .profile-pic {
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+  background: none;
+}
+
+.info .profile-pic img {
+  transform: translate(-0.5rem);
+}
+
+#image {
+  margin-top: -1rem;
+  border-radius: 0%;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.post-content {
+  width: 100%;
+  padding: 9px;
+}
+
+.likes {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 4px;
+}
+
+.post {
+  align-items: right;
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 13px;
+  transform: translate(-18px);
+}
+
+.post span {
+  font-weight: bolder;
+  align-items: left;
+}
+
+#time {
+  color: rgb(80, 78, 78);
+  font-size: 9px;
+  margin-left: 12px;
+  transform: translate(0, 15px);
+}
+
+.comment-container {
+  width: 100%;
+  height: 15px;
+  border-radius: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.comment-container .icons {
+  max-height: 18px;
+  max-width: 18px;
+  padding-left: 8px;
+}
+
+.comment-input {
+  width: 70%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding-left: 7px;
+}
+
+.comment-btn,
+.action-btn {
+  cursor: pointer;
+  width: 70px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: rgb(4, 121, 189);
+  opacity: 0.5;
+}
+
+.reaction-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.reaction-container .icons {
+  margin: 0;
+  margin-right: 15px;
+  max-width: 19px;
+  max-height: 18px;
+  cursor: pointer;
+}
+
+.reaction-container .icon.save {
+  margin-left: auto;
+  max-width: 18px;
+  max-height: 22px;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border-top: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, 0.5rem);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  position: relative;
+}
+
+.nav-items .icon {
+  cursor: pointer;
+  margin: 0 20px;
+  display: inline-block;
+  height: 24px;
+}
+
+.add-container {
+  border: 1px #ccc solid;
+  box-shadow: 1px 1px 2px #ccc;
+  max-width: 110px;
+  list-style: none;
+}
+.add-container p {
+  border-bottom: 1px #ccc solid;
+  max-height: 37px;
+}
+
+.add-container img {
+  max-height: 20px;
+  max-width: 20px;
+  margin: 7px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .phone-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
